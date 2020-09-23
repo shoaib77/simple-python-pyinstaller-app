@@ -1,5 +1,5 @@
 pipeline {
-    agent asus
+    agent any
     stages {
         stage('Build') {
             agent {
