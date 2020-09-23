@@ -24,7 +24,10 @@ pipeline {
             }
             post {
                 success {
-                    archiveArtifacts 'dist/add2vals'
+                    sh 'echo "Successfull Execution"'
+                }
+                always{
+                    deleteDir()
                 }
             }
         }
