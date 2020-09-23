@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent { 
+        label 'asus'
+    }
     stages {
         stage('Build') {
             agent {
